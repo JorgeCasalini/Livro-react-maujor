@@ -51,20 +51,27 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 🧩 Estrutura do Projeto
 O projeto está organizado da seguinte forma:
-
+```
 editora-maujortec/
-├── public/              # Arquivos estáticos (HTML, imagens, etc.)
-├── src/                 # Código-fonte da aplicação
-│   ├── components/      # Componentes reutilizáveis
-│   ├── pages/           # Páginas da aplicação
-│   ├── hooks/           # Hooks personalizados
-│   ├── services/        # Serviços (API, Firebase, etc.)
-│   ├── styles/          # Estilos globais e temas
-│   ├── App.js           # Componente principal
-│   └── index.js         # Ponto de entrada da aplicação
-├── .gitignore           # Arquivos e pastas ignorados pelo Git
-├── package.json         # Dependências e scripts do projeto
-└── README.md            # Documentação do projeto
+├── build/ # Pasta gerada após o build do projeto (contém os arquivos de produção)
+├── node_modules/ # Dependências do projeto instaladas via npm ou yarn
+├── public/ # Arquivos estáticos (HTML, imagens, etc.)
+│ ├── api/ # Arquivos de API simulados ou estáticos (JSON, etc.)
+│ ├── imagens/ # Imagens utilizadas no projeto
+│ ├── index.html # Página HTML principal
+│ └── favicon.ico # Ícone do site
+├── src/ # Código-fonte da aplicação
+│ ├── components/ # Componentes reutilizáveis
+│ │ ├── Header.js # Componente do cabeçalho
+│ │ └── Footer.js # Componente do rodapé
+│ ├── App.js # Componente principal
+│ ├── index.js # Ponto de entrada da aplicação
+│ └── index.css # Estilos globais da aplicação
+├── .gitignore # Arquivos e pastas ignorados pelo Git
+├── package.json # Dependências e scripts do projeto
+├── package-lock.json # Versões exatas das dependências instaladas
+└── README.md # Documentação do projeto
+```
 🧪 Testes
 Para rodar os testes de unidade, execute o seguinte comando:
 
