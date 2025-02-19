@@ -1,108 +1,38 @@
-# React Aprenda Praticando
+# Projetos do Livro: React Aprenda Praticando
 
-Um projeto React desenvolvido com base no livro **React: Aprenda Praticando**, de Maurício "Maujor" Samy Silva. Este projeto tem como objetivo praticar e aplicar os conceitos aprendidos no livro, desde o básico do JavaScript para React até tópicos avançados como Hooks, Firebase e testes de unidade.
+Este repositório contém dois projetos desenvolvidos com base no livro **React: Aprenda Praticando**, de Maurício "Maujor" Samy Silva. Os projetos são:
 
-## 🚀 Começando
+1. **Tabela de Livros**: Uma aplicação CRUD (Create, Read, Update, Delete) para gerenciar uma lista de livros.
+2. **Site da Editora MaujorTec**: Um site estático desenvolvido com React, utilizando componentes e rotas.
 
-Siga as instruções abaixo para rodar o projeto localmente em sua máquina.
+---
 
-### 📋 Pré-requisitos
+## 📋 Resumo dos Projetos
 
-Antes de começar, certifique-se de ter instalado:
+### 1. Tabela de Livros
 
-- Node.js (versão 14.x ou superior)
-- npm (versão 6.x ou superior)
+Este projeto é uma aplicação React que simula um sistema de gerenciamento de livros. Ele foi desenvolvido passo a passo no livro, abordando conceitos fundamentais do React, como:
 
-### 🔧 Instalação
+- **Componentes**: Criação e reutilização de componentes para construir a interface.
+- **Estado (State)**: Uso do `useState` para gerenciar o estado da aplicação, como a lista de livros.
+- **Props**: Passagem de dados entre componentes.
+- **Ciclo de Vida**: Utilização de `useEffect` para operações como carregamento inicial de dados.
+- **CRUD Completo**:
+  - **Create**: Adicionar novos livros à lista.
+  - **Read**: Exibir a lista de livros em uma tabela.
+  - **Update**: Editar informações de um livro existente.
+  - **Delete**: Remover um livro da lista.
 
-1. Clone o repositório:
+O projeto também inclui persistência de dados usando **Local Storage**, permitindo que os livros sejam salvos no navegador do usuário.
 
-```bash
-git clone https://github.com/JorgeCasalini/Livro-react-maujor
-````
-2. Acesse a pasta do projeto:
-```bash
-cd editora-maujortec
-```
-3.Instale as dependências:
+### 2. Site da Editora MaujorTec
 
-```bash
-npm install
-```
-4.Inicie o servidor de desenvolvimento:
+Este projeto é um site estático desenvolvido para a editora MaujorTec. Ele inclui:
 
-```bash
-npm start
-```
-5.Abra o navegador e acesse:
+- **Páginas dinâmicas**: Utilizando **React Router** para navegação entre páginas.
+- **Componentes reutilizáveis**: Como cabeçalho, rodapé e cards de livros.
+- **Conteúdo estático**: Páginas como "Home", "Categorias" e "Catálogo".
 
-```bash
-http://localhost:3000
-```
-🛠️ Tecnologias Utilizadas
-Este projeto foi desenvolvido com as seguintes tecnologias:
+O projeto demonstra como estruturar um site com React, utilizando boas práticas de componentização e roteamento.
 
-- **[React](https://reactjs.org/)**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **[React Router](https://reactrouter.com/)**: Roteamento para aplicações React.
-- **[Firebase](https://firebase.google.com/)**: Autenticação e persistência de dados.
-- **[Jest](https://jestjs.io/)**: Framework para testes de unidade.
-- **[Styled Components](https://styled-components.com/)**: Estilização de componentes.
-- **[Axios](https://axios-http.com/)**: Cliente HTTP para requisições à API.
-
-🧩 Estrutura do Projeto
-O projeto está organizado da seguinte forma:
-```
-editora-maujortec/
-├── build/ # Pasta gerada após o build do projeto (contém os arquivos de produção)
-├── node_modules/ # Dependências do projeto instaladas via npm ou yarn
-├── public/ # Arquivos estáticos (HTML, imagens, etc.)
-│ ├── api/ # Arquivos de API simulados ou estáticos (JSON, etc.)
-│ ├── imagens/ # Imagens utilizadas no projeto
-│ ├── index.html # Página HTML principal
-│ └── favicon.ico # Ícone do site
-├── src/ # Código-fonte da aplicação
-│ ├── components/ # Componentes reutilizáveis
-│ │ ├── Header.js # Componente do cabeçalho
-│ │ └── Footer.js # Componente do rodapé
-│ ├── App.js # Componente principal
-│ ├── index.js # Ponto de entrada da aplicação
-│ └── index.css # Estilos globais da aplicação
-├── .gitignore # Arquivos e pastas ignorados pelo Git
-├── package.json # Dependências e scripts do projeto
-├── package-lock.json # Versões exatas das dependências instaladas
-└── README.md # Documentação do projeto
-```
-🧪 Testes
-Para rodar os testes de unidade, execute o seguinte comando:
-
-```bash
-npm test
-```
-Os testes foram desenvolvidos usando Jest e React Testing Library, seguindo as práticas de TDD (Test-Driven Development) apresentadas no livro.
-
-🚀 Deploy
-
-O projeto pode ser hospedado em plataformas como Netlify ou Vercel. Para gerar a versão de produção, execute:
-
-```bash
-npm run build
-```
-Em seguida, siga as instruções da plataforma escolhida para fazer o deploy.
-
-🤝 Como Contribuir
-
-Contribuições são bem-vindas! Siga os passos abaixo:
-
-Faça um fork do projeto.
-
-Crie uma branch para sua feature (git checkout -b feature/nova-feature).
-
-Commit suas mudanças (git commit -m 'Adiciona nova feature').
-
-Push para a branch (git push origin feature/nova-feature).
-
-Abra um Pull Request.
-
-📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+---
