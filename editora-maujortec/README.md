@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# React Aprenda Praticando
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um projeto React desenvolvido com base no livro **React: Aprenda Praticando**, de Maurício "Maujor" Samy Silva. Este projeto tem como objetivo praticar e aplicar os conceitos aprendidos no livro, desde o básico do JavaScript para React até tópicos avançados como Hooks, Firebase e testes de unidade.
 
-## Available Scripts
+## 🚀 Começando
 
-In the project directory, you can run:
+Siga as instruções abaixo para rodar o projeto localmente em sua máquina.
 
-### `npm start`
+### 📋 Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Antes de começar, certifique-se de ter instalado:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (versão 14.x ou superior)
+- npm (versão 6.x ou superior)
 
-### `npm test`
+### 🔧 Instalação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone o repositório:
 
-### `npm run build`
+```bash
+git clone https://github.com/JorgeCasalini/Livro-react-maujor
+````
+2. Acesse a pasta do projeto:
+```bash
+cd editora-maujortec
+```
+3.Instale as dependências:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
+4.Inicie o servidor de desenvolvimento:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
+5.Abra o navegador e acesse:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+http://localhost:3000
+```
+🛠️ Tecnologias Utilizadas
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-### `npm run eject`
+- **[React](https://reactjs.org/)**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **[React Router](https://reactrouter.com/)**: Roteamento para aplicações React.
+- **[Firebase](https://firebase.google.com/)**: Autenticação e persistência de dados.
+- **[Jest](https://jestjs.io/)**: Framework para testes de unidade.
+- **[Styled Components](https://styled-components.com/)**: Estilização de componentes.
+- **[Axios](https://axios-http.com/)**: Cliente HTTP para requisições à API.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🧩 Estrutura do Projeto
+O projeto está organizado da seguinte forma:
+```
+editora-maujortec/
+├── build/ # Pasta gerada após o build do projeto (contém os arquivos de produção)
+├── node_modules/ # Dependências do projeto instaladas via npm ou yarn
+├── public/ # Arquivos estáticos (HTML, imagens, etc.)
+│ ├── api/ # Arquivos de API simulados ou estáticos (JSON, etc.)
+│ ├── imagens/ # Imagens utilizadas no projeto
+│ ├── index.html # Página HTML principal
+│ └── favicon.ico # Ícone do site
+├── src/ # Código-fonte da aplicação
+│ ├── components/ # Componentes reutilizáveis
+│ │ ├── Header.js # Componente do cabeçalho
+│ │ └── Footer.js # Componente do rodapé
+│ ├── App.js # Componente principal
+│ ├── index.js # Ponto de entrada da aplicação
+│ └── index.css # Estilos globais da aplicação
+├── .gitignore # Arquivos e pastas ignorados pelo Git
+├── package.json # Dependências e scripts do projeto
+├── package-lock.json # Versões exatas das dependências instaladas
+└── README.md # Documentação do projeto
+```
+🧪 Testes
+Para rodar os testes de unidade, execute o seguinte comando:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm test
+```
+Os testes foram desenvolvidos usando Jest e React Testing Library, seguindo as práticas de TDD (Test-Driven Development) apresentadas no livro.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🚀 Deploy
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O projeto pode ser hospedado em plataformas como Netlify ou Vercel. Para gerar a versão de produção, execute:
 
-## Learn More
+```bash
+npm run build
+```
+Em seguida, siga as instruções da plataforma escolhida para fazer o deploy.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🤝 Como Contribuir
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contribuições são bem-vindas! Siga os passos abaixo:
 
-### Code Splitting
+Faça um fork do projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Crie uma branch para sua feature (git checkout -b feature/nova-feature).
 
-### Analyzing the Bundle Size
+Commit suas mudanças (git commit -m 'Adiciona nova feature').
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Push para a branch (git push origin feature/nova-feature).
 
-### Making a Progressive Web App
+Abra um Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📄 Licença
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
