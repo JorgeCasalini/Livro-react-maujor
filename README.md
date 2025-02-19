@@ -17,9 +17,9 @@ Antes de começar, certifique-se de ter instalado:
 
 1. Clone o repositório:
 
+Acesse a pasta do projeto:
 ```bash
 git clone https://github.com/JorgeCasalini/Livro-react-maujor
-Acesse a pasta do projeto:
 ````
 2. Acesse a pasta do projeto:
 ```bash
