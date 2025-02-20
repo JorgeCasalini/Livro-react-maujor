@@ -9,7 +9,7 @@ import Design from './components/Design.js';
 import NotFound from './components/NotFound.js';
 import Rodape from './components/Rodape.js';
 import "./index.css"
-import Livro from './components/Livro';
+import Livro from './components/Livro.js';
 import axios from 'axios';
 
 class App extends Component {
