@@ -38,19 +38,13 @@ class App extends Component {
       <Router>
         <Topo />
         <Routes>
-          <Route exact path="/" element={<Home livros={this.state.livros} />} />
-          <Route exact path="/frontend" element={<Frontend livros={this.state.livros} />} />
-          <Route exact path="/programacao" element={<Programacao livros={this.state.livros} />} />
-          <Route exact path="/design" element={<Design livros={this.state.livros} />} />
-          <Route exact path="/catalogo" element={<Catalogo livros={this.state.livros} />} />
-          <Route path="/livro/:livroSlug" element={props => {
-            const livro = this.state.livros.find(
-              livro => livro.slug === props.match.params.livroSlug);
-            if (livro) return <Livro livro={livro} />;
-            else return <NotFound />;
-          }}
-          />
-          <Route element={<NotFound />} />
+          <Route path="/" element={<Home livros={this.state.livros} />} />
+          <Route path="/frontend" element={<Frontend livros={this.state.livros} />} />
+          <Route path="/programacao" element={<Programacao livros={this.state.livros} />} />
+          <Route path="/design" element={<Design livros={this.state.livros} />} />
+          <Route path="/catalogo" element={<Catalogo livros={this.state.livros} />} />
+          <Route path="/livro/:livroSlug" element={<Livro livros={this.state.livros} />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Rodape />
       </Router>
